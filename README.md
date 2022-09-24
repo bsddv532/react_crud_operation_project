@@ -92,7 +92,7 @@ While adding the employee details you can also validate the data that it is vali
 
 Once you run this project you can see the interface like this
 
-![photo](./images/output.png)
+![photo](./images/Output.png)
 
 
 After that there is one Add button to add Employee Details, once you click on that you will going to this interface.
