@@ -68,3 +68,51 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+## Dockerization Process
+After adding the DockerFile you can build the image and run that image in container by using following commands.
+
+### To build the image for the application
+```
+docker build -t <image_name> .
+```
+
+### To run that image in container
+```
+docker run -d -p 3000:3000 --name <container_name> <image_name>
+```
+
+
+## About The Project
+
+In this project I have done the CRUD Operation with validation in Employee Details like FirstName, LastName, Designation, ContactNumber.
+
+While adding the employee details you can also validate the data that it is valid or not like the mobile number is having 10digit or not.
+
+Once you run this project you can see the interface like this
+
+![photo](./images/output.png)
+
+
+After that there is one Add button to add Employee Details, once you click on that you will going to this interface.
+
+![photo](./images/Add_Employee_Form.png)
+
+Once you done with Add employee details you will found the employee details in the Employee Information Dashboard in this manner
+
+![photo](./images/Employee_Details.png)
+
+Once the details was added in the Employee Information dashboard , and if you found that there is some mistake in your details so you can also update those details by click on that Edit button of that row .
+Once you Click on that Edit button you will found the Edit Employee form like this
+
+![photo](./images/Edit_Employee_Form.png)
+
+
+After update that detail you will found that your details will be updated in the dashboard.
+
+But now if you want to delete that employee detail, so you can also delete that detail by click on the Remove button of the same row.
+
+Once you click on that remove button you will found that your data is deleted.
+
+![photo](./images/AfterDeletingOutput.png)
